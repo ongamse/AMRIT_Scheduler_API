@@ -43,4 +43,5 @@ jobs:
       uses: actions/upload-artifact@v2 
       with:
         name: Schedular-API
-        path: target/schedulerapi-v1.0.war        
+        path: target/schedulerapi-v1.0.war  
+        
