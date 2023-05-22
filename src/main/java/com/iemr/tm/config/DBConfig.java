@@ -30,6 +30,7 @@ import com.iemr.tm.utils.config.ConfigProperties;
 @EnableJpaRepositories(entityManagerFactoryRef = "entityManagerFactory", basePackages = {",com.iemr.tm.*","com.iemr.tm.repo.*" })
 
 public class DBConfig {
+	
 	Logger logger = LoggerFactory.getLogger(this.getClass().getName());
 
 	@Primary
