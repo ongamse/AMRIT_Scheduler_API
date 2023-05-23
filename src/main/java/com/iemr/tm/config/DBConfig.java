@@ -62,7 +62,6 @@ public class DBConfig {
 
 		return datasource;
 	}
-
 	@Primary
 	@Bean(name = "entityManagerFactory")
 	public LocalContainerEntityManagerFactoryBean entityManagerFactory(EntityManagerFactoryBuilder builder,
