@@ -42,7 +42,7 @@ public class SwaggerConfig {
 	}
 
 	private ApiInfo metaData() {
-		ApiInfo apiInfo = new ApiInfo("Spring Boot REST API", "Spring Boot REST API for Piramal MMUs application",
+		ApiInfo apiInfo = new ApiInfo("Scheduler API", "An interface between the client and scheduling services which allows users to consult with specialists enabling them to book or cancel slots based on availability.",
 				"1.0", "Terms of service", new Contact("AMRIT", "https://psmri.github.io/PSMRI/", "amrit@piramalswasthya.org"), "",
 				"");
 		return apiInfo;
