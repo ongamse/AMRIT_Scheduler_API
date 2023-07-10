@@ -50,7 +50,7 @@ public class SpecialistController {
 	private SpecialistService specialistService;
 
 	@CrossOrigin()
-	@ApiOperation(value = "fetch all specialization", consumes = "application/json", produces = "application/json")
+	@ApiOperation(value = "Fetch master specialization", consumes = "application/json", produces = "application/json")
 	@RequestMapping(value = "masterspecialization", method = RequestMethod.POST)
 	public String markavailability() {
 		OutputResponse response = new OutputResponse();
@@ -66,7 +66,7 @@ public class SpecialistController {
 	}
 
 	@CrossOrigin()
-	@ApiOperation(value = "fetch  specialist", consumes = "application/json", produces = "application/json")
+	@ApiOperation(value = "Fetch list of specialists", consumes = "application/json", produces = "application/json")
 	@RequestMapping(value = "getSpecialist", method = RequestMethod.POST)
 	public String getSpecialist(@RequestBody Specialist specialist) {
 		OutputResponse response = new OutputResponse();
@@ -83,7 +83,7 @@ public class SpecialistController {
 	}
 
 	@CrossOrigin()
-	@ApiOperation(value = "fetch  specialist", consumes = "application/json", produces = "application/json")
+	@ApiOperation(value = "Fetch user specialist", consumes = "application/json", produces = "application/json")
 	@RequestMapping(value = "info/{userID}", method = RequestMethod.GET)
 	public String info(@PathVariable("userID") Long userID) {
 		OutputResponse response = new OutputResponse();
@@ -101,7 +101,7 @@ public class SpecialistController {
 	}
 
 	@CrossOrigin()
-	@ApiOperation(value = "fetch  specialist", consumes = "application/json", produces = "application/json")
+	@ApiOperation(value = "Fetch all specialists", consumes = "application/json", produces = "application/json")
 	@RequestMapping(value = "getSpecialistAll", method = RequestMethod.POST)
 	public String getSpecialistAll(@RequestBody Specialist specialist) {
 		OutputResponse response = new OutputResponse();

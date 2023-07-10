@@ -45,7 +45,7 @@ public class VanController {
 	private VanService vanService;
 
 	@CrossOrigin()
-	@ApiOperation(value = "fetch all specialization", consumes = "application/json", produces = "application/json")
+	@ApiOperation(value = "Fetch specialization by van id", consumes = "application/json", produces = "application/json")
 	@RequestMapping(value = "getvan/{vanid}", method = RequestMethod.GET)
 	public String markavailability(@PathVariable("vanid") Integer vanid) {
 		OutputResponse response = new OutputResponse();
