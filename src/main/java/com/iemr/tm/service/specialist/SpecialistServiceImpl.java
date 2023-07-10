@@ -48,10 +48,6 @@ public class SpecialistServiceImpl implements SpecialistService {
 	@Override
 	public List<Specialist> getspecialistUser(Long providerservicemapID, Long specializationID, Long userID)
 			throws TMException {
-		
-		// List<Object[]>
-		// obj=specializationRepo.getspecialist(providerservicemapID,
-
 		Long parkingplaceID = specializationRepo.getPPID(providerservicemapID, userID);
 		if (parkingplaceID == null) {
 			throw new TMException("User not mapped to a parking place");
