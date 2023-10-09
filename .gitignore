@@ -34,3 +34,5 @@ config.json
 mvnw
 mvnw.cmd
 
+# Properties
+src/main/environment/common_local.properties
